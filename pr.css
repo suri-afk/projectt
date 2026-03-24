@@ -25,3 +25,10 @@ color: black;
 body{
   justify-content: center;
 }
+.card{
+  justify-content: center;
+}
+
+.carousel-inner{
+  padding-bottom: 80px;
+}
