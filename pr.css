@@ -1,16 +1,15 @@
 
-
 .kartochki
 {
   display: flex;
   flex-direction: row;
   gap: 30px;
   justify-content: center;
- margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .btn{
   background-color: bisque;
-color: black;
+  color: black;
   padding: 12px 24px;
   border: none;
   border-radius: 5px;
@@ -27,6 +26,21 @@ body{
 }
 .card{
   justify-content: center;
+}
+.card-title{
+  height: 80px;
+}
+.card-title {
+  height: 80px;
+}
+
+.carousel-image{
+  object-fit: contain;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
 }
 
 .carousel-inner{
