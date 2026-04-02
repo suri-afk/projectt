@@ -1,3 +1,46 @@
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.diva{
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+h5 {
+  font-family: "Noto Sans Meroitic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btnk{
+  border: none;
+  outline: none;
+  padding-right: 30px;
+}
+.btnk:hover{
+  width: 30%;
+  height: 40%;
+  border-color: rgb(250, 222, 250);
+}
+.btnk1{
+  border: none;
+  padding-right: 30px;
+  outline: none;
+
+}
+.btnk1:hover{
+  width: 5%;
+  height: 20%;
+  border-color: rgb(250, 222, 250);
+}
 
 .kartochki
 {
@@ -21,8 +64,12 @@
   background-color: khaki;
   color: white;
 }
+nav{
+  background-color: #fcf6ef
+}
 body{
   justify-content: center;
+  background-color: #fcf6ef
 }
 .card{
   justify-content: center;
