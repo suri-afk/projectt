@@ -9,38 +9,51 @@
   gap: 7px;
 
 }
-
+h6{
+  height: 30px;
+}
 .dm-serif-display-regular-italic {
   font-family: "DM Serif Display", serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
 }
 h5 {
   font-family: "Noto Sans Meroitic", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
-.btnk{
+.btnk3{
   border: none;
   outline: none;
   padding-right: 30px;
+  transition: transform 0.3s ease; 
 }
-.btnk:hover{
-  width: 30%;
-  height: 40%;
-  border-color: rgb(250, 222, 250);
-}
-.btnk1{
-  border: none;
-  padding-right: 30px;
-  outline: none;
+.btnk3:hover{
 
+  transform: scale(1.5); 
 }
-.btnk1:hover{
-  width: 5%;
-  height: 20%;
-  border-color: rgb(250, 222, 250);
+
+.btnk1 {
+  border: none;
+  outline: none;
+  padding-right: 30px;
+  transition: transform 0.3s ease; 
 }
+.btnk2{
+  border: none;
+  outline: none;
+  padding-right: 30px;
+  transition: transform 0.3s ease; 
+}
+.btnk2:hover {
+
+  transform: scale(1.5); 
+}
+.btnk1:hover {
+
+  transform: scale(1.5); 
+}
+
 
 .kartochki
 {
@@ -49,6 +62,10 @@ h5 {
   gap: 30px;
   justify-content: center;
   padding-bottom: 30px;
+}
+
+.form-control-me-2:hover {
+  border-color: rgb(250, 206, 243); 
 }
 .btn{
   background-color: bisque;
