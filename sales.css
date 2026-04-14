@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  height: 100vh;        
+  display: flex;         
+  justify-content: center; 
+  align-items: center;   
+  text-align: center;    
+  
+  background-color: #f0f0f0; 
+  font-family: sans-serif;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  opacity: 0;
+  animation: fadeIn 2s 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Текст чуть «поднимется» при появлении */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

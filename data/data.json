@@ -1,0 +1,24 @@
+
+
+  {
+    "lips": {
+   "url": "lips",
+   "title": "Products for lips",
+   "image": "laneige.webp"
+    },
+    "body care": {
+      "url": "bodycare",
+      "title": "Products for body",
+      "image": "4caee85fb0748252f37a8b7b66fd97be.jpg.webp"
+      },
+      "face": {
+        "url": "face",
+        "title": "Products for face",
+        "image": "rare beauty gel.webp"
+        },
+        "sales": {
+          "url": "sale",
+          "title": "sales",
+          "image": "2308-w058-n003-685B-p15-685__1_-removebg-preview.png"
+          }
+  }

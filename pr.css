@@ -63,7 +63,21 @@ h5 {
   justify-content: center;
   padding-bottom: 30px;
 }
-
+.btn2{
+  background-color:  rgb(255, 204, 233);
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.btn2:hover {
+  background-color:  rgb(255, 214, 255);
+  color: white;
+}
 .form-control-me-2:hover {
   border-color: rgb(250, 206, 243); 
 }
