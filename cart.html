@@ -4,8 +4,8 @@
 <head>
     <meta carset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>nisheta</title>
-    <link rel="stylesheet" href=""/>
+    <title>pochti oligarh</title>
+    <link rel="stylesheet" href="cart.css"/>
 </head>
 <body>
 
@@ -41,14 +41,17 @@
 
         let html = '<ul class="list-group">';
         let total = 0;
+        const productImage = new Image;
 
         cart.forEach((item, index) => {
+            productImage.src= item.image;
             const sum = item.price * item.count;
             total += sum;
             html += `
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     ${item.name} (x${item.count})
                     <span>${sum.toFixed(2)}$</span>
+                    <img src=${item.image} class="card-img-top" height="200px" alt="pdoduct" style="object-fit:cover">
                 </li>`;
         });
 

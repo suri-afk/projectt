@@ -69,7 +69,7 @@
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="./images/images.jpg"width="300px" height="400px" class="d-block w-100 carousel-image" alt="...">
+          <img src="./images/images.jpg" width="300px" height="400px" class="d-block w-100 carousel-image" alt="...">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -176,7 +176,7 @@
         Сhanel Tendre Moisturizing Lotion</h5>
         <h6 class="card-titlle">15,99$</h6>
       <a href="#" class="btn">Подробнее</a>
-      <button class="btn2 buy-btn" data-name="  Сhanel Tendre Moisturizing Lotion" data-price="15.99">купить</button>
+      <button class="btn2 buy-btn" data-name="Сhanel Tendre Moisturizing Lotion" data-image="./images/4caee85fb0748252f37a8b7b66fd97be.jpg.webp" data-price="15.99">купить</button>
       </div>
       </div>
 
@@ -191,19 +191,89 @@
         </div>
 </div>
 <script>
+//   document.addEventListener('DOMContentLoaded', () => {
+//   const buyButtons = document.querySelectorAll('.buy-btn');
+
+//   buyButtons.forEach(button => {
+//       button.addEventListener('click', () => {
+//           const name = button.getAttribute('data-name');
+//           const price = button.getAttribute('data-price');
+//           const image = button.getAttribute('data-image');
+          
+//           const product = {
+//               name: name,
+//               price: price,
+//               image: image,
+//               quantity: 1
+//           };
+
+//           addToCart(product);
+//       });
+//   });
+// document.addEventListener('DOMContentLoaded', () => {
+//     const buttons = document.querySelectorAll('.buy-btn');
+  
+//     buttons.forEach(btn => {
+//         btn.onclick = function() {
+//             const name = this.dataset.name;
+//             const price = parseFloat(this.dataset.price);     
+//             let cart = JSON.parse(localStorage.getItem('myCart')) || [];
+//             const itemIndex = cart.findIndex(item => item.name === name);     
+//             if (itemIndex > -1) {
+//                 cart[itemIndex].count += 1;
+//             } else {
+//                 cart.push({ name, price, count: 1 });
+//             }
+//             localStorage.setItem('myCart', JSON.stringify(cart));
+//             alert('Товар добавлен!');
+//         };
+//     });
+//   });
+//   function addToCart(product) {
+//       let cart = JSON.parse(localStorage.getItem('cart')) || [];
+//       const existingProduct = cart.find(item => item.name === product.name);
+
+//       if (existingProduct && existingProduct.quantity>1) {
+//           existingProduct.quantity += 1;
+//           cardElement.style.addClassName = "active";
+//       } else {
+//           cart.push(product);
+//       }
+//       localStorage.setItem('cart', JSON.stringify(cart));
+      
+//       alert('Товар добавлен в корзину!');
+//   }
+// });
+
+// function removeFromCart(product) {
+//   let cart = JSON.parse(localStorage.getItem('cart')) || [];
+//   const existingProduct = cart.find(item => item.name === product.name);
+
+//   if (existingProduct && existingProduct.quantity>1) {
+//       existingProduct.quantity -= 1;
+//   } else {
+//       cart.push(product);
+//   }
+ 
+  
+//   alert('Товар удален из корзины!');
+// }
+
+
  document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.buy-btn');
   
     buttons.forEach(btn => {
         btn.onclick = function() {
             const name = this.dataset.name;
+            const image = this.dataset.image;
             const price = parseFloat(this.dataset.price);     
             let cart = JSON.parse(localStorage.getItem('myCart')) || [];
             const itemIndex = cart.findIndex(item => item.name === name);     
             if (itemIndex > -1) {
                 cart[itemIndex].count += 1;
             } else {
-                cart.push({ name, price, count: 1 });
+                cart.push({ name, price, image, count: 1 });
             }
             localStorage.setItem('myCart', JSON.stringify(cart));
             alert('Товар добавлен!');

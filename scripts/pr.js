@@ -14,10 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
       button.addEventListener('click', () => {
           const name = button.getAttribute('data-name');
           const price = button.getAttribute('data-price');
+          const image = button.getAttribute('data-image');
           
           const product = {
               name: name,
               price: price,
+              image: image,
               quantity: 1
           };
 

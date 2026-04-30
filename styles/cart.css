@@ -1,0 +1,27 @@
+body{
+background-color: rgb(251, 232, 243);
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.btn btn-danger{
+  background-color:  rgb(255, 204, 233);
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.btn btn-danger:hover {
+  background-color:  rgb(255, 214, 255);
+  color: white;
+}
