@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="pr.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title> magazin </title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="pr.css">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+Meroitic&family=Share+Tech&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -41,14 +41,18 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./sales.html">Sales</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="./ab.html">About us</a>
             </li>
 
           </ul>
           <form class="d-flex" role="search">
-            
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btnk3" type="submit" width="50px" height="50px"><img src="./images/лупа.webp" width="25px" height="25px" class="kaaa"></button>
+          <input 
+              type="search" 
+              oninput="liveSearch()" 
+              id="searchbox" 
+            ><label for="searchbox"> </label>
           </form>
           <a href="./cart.html"><button class="btnk1"> <img src="./images/2308-w058-n003-685B-p15-685__1_-removebg-preview.png" width="31px" height="39px" class="kaaa"> </button></a> 
           <a href="./vhod.html"><button class="btnk2"   width="32px" height="39px">  <img src="./images/aaaaaa-removebg-preview.png"  width="25px" height="33px"> </button></a>
@@ -96,7 +100,7 @@
        <h5 class="card-title">Glaze Craze Donut Delight Hydrating Tinted Lip Serum Duo</h5>
        <h6 class="card-titlle">15,99$</h6>
        <a href="#" class="btn btn-primary">Подробнее</a>
-       <button class="btn2 buy-btn" data-name="Glaze Craze Donut Delight Hydrating Tinted Lip Serum Duo" data-price="15.99">купить</button>
+       <button class="btn2 buy-btn" data-name="Glaze Craze Donut Delight Hydrating Tinted Lip Serum Duo" data-image="images/ponchikg.webp" data-price="15.99">купить</button>
        </div>
        </div>
  
@@ -104,9 +108,9 @@
          <img src="./images/laneige.webp" class="card-img-top" alt="Ko">
        <div class=" card-body">
        <h5 class="card-title">Laneige S'more Kisses Set</h5>
-       <h6 class="card-titlle">15,99$</h6>
+       <h6 class="card-titlle">78,99$</h6>
        <a href="#" class="btn">Подробнее</a>
-       <button class="btn2 buy-btn" data-name="Laneige S'more Kisses Set" data-price="15.99">купить</button>
+       <button class="btn2 buy-btn" data-name="Laneige S'more Kisses Set" data-image="./images/laneige.webp" data-price="15.99">купить</button>
        </div>
        </div>
 
@@ -116,58 +120,57 @@
         <h5 class="card-title">Charlotte Tilbury Pillow Talk Iconic Lip and Cheek Secrets</h5>
         <h6 class="card-titlle">15,99$</h6>
         <a href="#" class="btn">Подробнее</a>
-        <button class="btn2 buy-btn" data-name="Charlotte Tilbury Pillow Talk Iconic Lip and Cheek Secrets" data-price="15.99">купить</button>
+        <button class="btn2 buy-btn" data-name="Charlotte Tilbury Pillow Talk Iconic Lip and Cheek Secrets" data-image="./images/11668559.jpg.webp" data-price="15.99">купить</button>
         </div>
         </div>
 
         <div class="card" style="width: 18rem;"> 
-          <img src="./images/Gisou glossy and glazed_files.webp" class="card-img-top" alt="Ko">
+          <img src="./images/Gisouglossy.webp" class="card-img-top" alt="Ko">
           <div class=" card-body">
           <h5 class="card-title">
             Gisou glossy and glazed</h5>
             <h6 class="card-titlle">15,99$</h6>
           <a href="#" class="btn">Подробнее</a>
-          <button class="btn2 buy-btn" data-name=" Gisou glossy and glazed" data-price="15.99">купить</button>
+          <button class="btn2 buy-btn" data-name=" Gisou glossy and glazed" data-image="./images/Gisouglossy.webp" data-price="15.99">купить</button>
           </div>
           </div>
 
           <div class="card" style="width: 18rem;"> 
-            <img src="./images/rare beauty gel.webp" class="card-img-top" alt="Ko">
+            <img src="./images/rarebeautygel.webp" class="card-img-top" alt="Ko">
             <div class=" card-body">
             <h5 class="card-title">
               Rare Beauty Brow Harmony Flexible Lifting Gel</h5>
               <h6 class="card-titlle">15,99$</h6>
             <a href="#" class="btn">Подробнее</a>
-            <button class="btn2 buy-btn" data-name="Rare Beauty Brow Harmony Flexible Lifting Gel" data-price="15.99">купить</button>
+            <button class="btn2 buy-btn" data-name="Rare Beauty Brow Harmony Flexible Lifting Gel" data-image="./images/rarebeautygel.webp" data-price="15.99">купить</button>
             </div>
             </div>
             
- </div>
- <div class="kartochki">
-  <div class="card" style="width: 18rem;"> <img src="./images/Magic Vanish Color Corrector.webp" class="card-img-top" alt="Ko">
+
+  <div class="card" style="width: 18rem;"> <img src="./images/MagicVanishColorCorrector.webp" class="card-img-top" alt="Ko">
    <div class=" card-body">
    <h5 class="card-title">Magic Vanish Color Corrector</h5>
    <h6 class="card-titlle">15,99$</h6>
    <a href="#" class="btn btn-primary">Подробнее</a>
-   <button class="btn2 buy-btn" data-name="Magic Vanish Color Corrector" data-price="15.99">купить</button>
+   <button class="btn2 buy-btn" data-name="Magic Vanish Color Corrector" data-image="./images/MagicVanishColorCorrector.webp" data-price="15.99">купить</button>
    </div>
    </div>
 
-   <div class="card" style="width: 18rem;"> <img src="./images/Charlotte Tilbury Pillow Talk Mini Glossy Lips Duo Fair.jpg" class="card-img-top" alt="Ko">
+   <div class="card" style="width: 18rem;"> <img src="./images/CharlotteTilburyPillowTalkMiniGlossyLipsDuoFair.jpg" class="card-img-top" alt="Ko">
    <div class=" card-body">
    <h5 class="card-title">Charlotte Tilbury Pillow Talk Mini Glossy Lips Duo Fair</h5>
    <h6 class="card-titlle">15,99$</h6>
    <a href="#" class="btn">Подробнее</a>
-   <button class="btn2 buy-btn" data-name="Charlotte Tilbury Pillow Talk Mini Glossy Lips Duo Fair" data-price="15.99">купить</button>
+   <button class="btn2 buy-btn" data-name="Charlotte Tilbury Pillow Talk Mini Glossy Lips Duo Fair" data-image="./images/CharlotteTilburyPillowTalkMiniGlossyLipsDuoFair.jpg" data-price="15.99">купить</button>
    </div>
    </div>
 
-   <div class="card" style="width: 18rem;"> <img src="./images/Ambient Lighting Edit Unlocked Swan.webp" class="card-img-top" alt="Ko">
+   <div class="card" style="width: 18rem;"> <img src="./images/hourglassSwan.webp" class="card-img-top" alt="Ko">
     <div class=" card-body">
     <h5 class="card-title">Ambient Lighting Edit Unlocked Swan</h5>
     <h6 class="card-titlle">15,99$</h6>
     <a href="#" class="btn">Подробнее</a>
-    <button class="btn2 buy-btn" data-name="Ambient Lighting Edit Unlocked Swan" data-price="15.99">купить</button>
+    <button class="btn2 buy-btn" data-name="Ambient Lighting Edit Unlocked Swan" data-image="./images/hourglassSwan.webp"  data-price="15.99">купить</button>
     </div>
     </div>
     <div class="card" style="width: 18rem;"> <img src="./images/4caee85fb0748252f37a8b7b66fd97be.jpg.webp" class="card-img-top" alt="Ko">
@@ -184,9 +187,8 @@
         <div class=" card-body">
         <h5 class="card-title">Hourglass Ambient Diffused Heat</h5>
         <h6 class="card-titlle">15,99$</h6>
-        <!-- <p class="card-text">Описание</p> -->
         <a href="#" class="btn">Подробнее</a>
-        <button class="btn2 buy-btn" data-name="Hourglass Ambient Diffused Heat" data-price="15.99">купить</button>
+        <button class="btn2 buy-btn" data-name="Hourglass Ambient Diffused Heat" data-image="./images/95695847.jpg.webp" data-price="15.99">купить</button>
         </div>
         </div>
 </div>
@@ -259,7 +261,22 @@
 //   alert('Товар удален из корзины!');
 // }
 
-
+function liveSearch() {
+  let cards = document.querySelectorAll('.card')
+  let search_query = document.getElementById("searchbox").value;
+  for (var i = 0; i < cards.length; i++) {
+    // If the text is within the card...
+    if(cards[i].innerText.toLowerCase()
+      // ...and the text matches the search query...
+      .includes(search_query.toLowerCase())) {
+        // ...remove the `.is-hidden` class.
+        cards[i].classList.remove("is-hidden");
+    } else {
+      // Otherwise, add the class.
+      cards[i].classList.add("is-hidden");
+    }
+  }
+}
  document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.buy-btn');
   

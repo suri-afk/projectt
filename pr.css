@@ -146,11 +146,17 @@ body{
 .card-title {
   height: 80px;
 }
-
+.is-hidden { display: none; }
 .carousel-image{
   object-fit: contain;
 }
+.kartochki {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
 
+}
 .card-img-top {
   object-fit: cover;
   height: 300px;

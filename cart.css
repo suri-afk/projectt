@@ -1,5 +1,6 @@
 body{
 background-color: rgb(251, 232, 243);
+text-align: center;
 }
 .card-img-top {
   object-fit: cover;
@@ -24,4 +25,11 @@ background-color: rgb(251, 232, 243);
 .btn btn-danger:hover {
   background-color:  rgb(255, 214, 255);
   color: white;
+}
+.kartochki {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+
 }
