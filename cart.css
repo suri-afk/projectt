@@ -1,7 +1,15 @@
 body{
 background-color: rgb(251, 232, 243);
-text-align: center;
+
 }
+.d-flex-align-items-center{
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 40px;
+padding-bottom: 20px;
+}
+
 .card-img-top {
   object-fit: cover;
   height: 200px;
@@ -26,6 +34,15 @@ text-align: center;
   background-color:  rgb(255, 214, 255);
   color: white;
 }
+.qty-btn {
+   width: 35px; 
+  }
+.cart-img {
+   width: 100px;
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+  }
 .kartochki {
   display: flex;
   flex-direction: row;
@@ -33,3 +50,23 @@ text-align: center;
   gap: 40px;
 
 }
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.quantity-selector input {
+  width: 40px;
+  text-align: center;
+  /* Убираем стрелочки браузера */
+  appearance: textfield;
+}
+.quantity-selector input::-webkit-outer-spin-button,
+.quantity-selector input::-webkit-inner-spin-button {
+  display: none;
+}
+.quantity-selector button {
+  width: 30px;
+  cursor: pointer;
+}
+

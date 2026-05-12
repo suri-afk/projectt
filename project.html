@@ -33,9 +33,12 @@
                 Cataloge
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Продукты для губ</a></li>
-                <li><a class="dropdown-item" href="#">Продукты </a></li>
-                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#" onclick="filterProducts('all')">Все товары</a></li>
+                <li><a class="dropdown-item" href="#" onclick="filterProducts('lips')">Для губ</a></li>
+                <li><a class="dropdown-item" href="#" onclick="filterProducts('face')">Для лица</a></li>
+                <li><a class="dropdown-item" href="#" onclick="filterProducts('brows')">Для бровей</a></li>
+                <li><a class="dropdown-item" href="#" onclick="sortProducts('high')">От дорогих к дешевым</a></li>
+                <li><a class="dropdown-item" href="#" onclick="sortProducts('low')">От дешевых к дорогим</a></li>
                 <li><a class="dropdown-item" href="./sales.html">act</a></li>
               </ul>
             </li>
@@ -92,187 +95,121 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-    <div class="kartochki">
-      <div class="card" style="width: 18rem;">
+    
+    <div class="kartochki"  id="product-container" data-price="18.99">
+      <div class="card" style="width: 18rem;"  data-category="lips" data-price="18.99">
         <img src="images/ponchikg.webp" class="card-img-top" alt="Ko">
        <div class=" card-body">
        <h5 class="card-title">Glaze Craze Donut Delight Hydrating Tinted Lip Serum Duo</h5>
-       <h6 class="card-titlle">15,99$</h6>
+       <h6 class="card-titlle">18,99$</h6>
        <a href="#" class="btn btn-primary">Подробнее</a>
-       <button class="btn2 buy-btn" data-name="Glaze Craze Donut Delight Hydrating Tinted Lip Serum Duo" data-image="images/ponchikg.webp" data-price="15.99">купить</button>
+       <button class="btn2 buy-btn" data-name="Glaze Craze Donut Delight Hydrating Tinted Lip Serum Duo" data-image="images/ponchikg.webp" data-price="18.99">купить</button>
        </div>
        </div>
  
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"   data-category="lips" data-price="78.99">
          <img src="./images/laneige.webp" class="card-img-top" alt="Ko">
        <div class=" card-body">
        <h5 class="card-title">Laneige S'more Kisses Set</h5>
        <h6 class="card-titlle">78,99$</h6>
        <a href="#" class="btn">Подробнее</a>
-       <button class="btn2 buy-btn" data-name="Laneige S'more Kisses Set" data-image="./images/laneige.webp" data-price="15.99">купить</button>
+       <button class="btn2 buy-btn" data-category="lips"  data-name="Laneige S'more Kisses Set" data-image="./images/laneige.webp" data-price="78.99">купить</button>
        </div>
        </div>
 
-       <div class="card" style="width: 18rem;"> 
+       <div class="card" style="width: 18rem;"   data-category="face" data-price="20.99"> 
         <img src="./images/11668559.jpg.webp" class="card-img-top" alt="Ko">
         <div class=" card-body">
         <h5 class="card-title">Charlotte Tilbury Pillow Talk Iconic Lip and Cheek Secrets</h5>
-        <h6 class="card-titlle">15,99$</h6>
+        <h6 class="card-titlle">20,99$</h6>
         <a href="#" class="btn">Подробнее</a>
-        <button class="btn2 buy-btn" data-name="Charlotte Tilbury Pillow Talk Iconic Lip and Cheek Secrets" data-image="./images/11668559.jpg.webp" data-price="15.99">купить</button>
+        <button class="btn2 buy-btn" data-category="lips"  data-name="Charlotte Tilbury Pillow Talk Iconic Lip and Cheek Secrets" data-image="./images/11668559.jpg.webp" data-price="20.99">купить</button>
         </div>
         </div>
 
-        <div class="card" style="width: 18rem;"> 
+        <div class="card" style="width: 18rem;"   data-category="lips" data-price="20.99"> 
           <img src="./images/Gisouglossy.webp" class="card-img-top" alt="Ko">
           <div class=" card-body">
           <h5 class="card-title">
             Gisou glossy and glazed</h5>
-            <h6 class="card-titlle">15,99$</h6>
+            <h6 class="card-titlle">20,99$</h6>
           <a href="#" class="btn">Подробнее</a>
-          <button class="btn2 buy-btn" data-name=" Gisou glossy and glazed" data-image="./images/Gisouglossy.webp" data-price="15.99">купить</button>
+          <button class="btn2 buy-btn" data-name=" Gisou glossy and glazed" data-image="./images/Gisouglossy.webp" data-price="20.99">купить</button>
           </div>
           </div>
 
-          <div class="card" style="width: 18rem;"> 
+          <div class="card" style="width: 18rem;"   data-category="brows"  data-price="19.99"> 
             <img src="./images/rarebeautygel.webp" class="card-img-top" alt="Ko">
             <div class=" card-body">
             <h5 class="card-title">
               Rare Beauty Brow Harmony Flexible Lifting Gel</h5>
-              <h6 class="card-titlle">15,99$</h6>
+              <h6 class="card-titlle">19,99$</h6>
             <a href="#" class="btn">Подробнее</a>
-            <button class="btn2 buy-btn" data-name="Rare Beauty Brow Harmony Flexible Lifting Gel" data-image="./images/rarebeautygel.webp" data-price="15.99">купить</button>
+            <button class="btn2 buy-btn" data-name="Rare Beauty Brow Harmony Flexible Lifting Gel" data-image="./images/rarebeautygel.webp" data-price="19.99">купить</button>
             </div>
             </div>
             
 
-  <div class="card" style="width: 18rem;"> <img src="./images/MagicVanishColorCorrector.webp" class="card-img-top" alt="Ko">
+  <div class="card" style="width: 18rem;"   data-price="23.99"> 
+    <img src="./images/MagicVanishColorCorrector.webp" class="card-img-top" alt="Ko">
    <div class=" card-body">
    <h5 class="card-title">Magic Vanish Color Corrector</h5>
-   <h6 class="card-titlle">15,99$</h6>
+   <h6 class="card-titlle">23,99$</h6>
    <a href="#" class="btn btn-primary">Подробнее</a>
-   <button class="btn2 buy-btn" data-name="Magic Vanish Color Corrector" data-image="./images/MagicVanishColorCorrector.webp" data-price="15.99">купить</button>
+   <button class="btn2 buy-btn" data-name="Magic Vanish Color Corrector" data-image="./images/MagicVanishColorCorrector.webp" data-price="23.99">купить</button>
    </div>
    </div>
 
-   <div class="card" style="width: 18rem;"> <img src="./images/CharlotteTilburyPillowTalkMiniGlossyLipsDuoFair.jpg" class="card-img-top" alt="Ko">
+   <div class="card" style="width: 18rem;"  data-price="23.99"> 
+    <img src="./images/CharlotteTilburyPillowTalkMiniGlossyLipsDuoFair.jpg" class="card-img-top" alt="Ko">
    <div class=" card-body">
    <h5 class="card-title">Charlotte Tilbury Pillow Talk Mini Glossy Lips Duo Fair</h5>
-   <h6 class="card-titlle">15,99$</h6>
+   <h6 class="card-titlle">23,99$</h6>
    <a href="#" class="btn">Подробнее</a>
-   <button class="btn2 buy-btn" data-name="Charlotte Tilbury Pillow Talk Mini Glossy Lips Duo Fair" data-image="./images/CharlotteTilburyPillowTalkMiniGlossyLipsDuoFair.jpg" data-price="15.99">купить</button>
+   <button class="btn2 buy-btn" data-name="Charlotte Tilbury Pillow Talk Mini Glossy Lips Duo Fair" data-image="./images/CharlotteTilburyPillowTalkMiniGlossyLipsDuoFair.jpg" data-price="23.99">купить</button>
    </div>
    </div>
 
-   <div class="card" style="width: 18rem;"> <img src="./images/hourglassSwan.webp" class="card-img-top" alt="Ko">
+   <div class="card" style="width: 18rem;"   data-price="44.99"> 
+    <img src="./images/hourglassSwan.webp" class="card-img-top" alt="Ko">
     <div class=" card-body">
     <h5 class="card-title">Ambient Lighting Edit Unlocked Swan</h5>
-    <h6 class="card-titlle">15,99$</h6>
+    <h6 class="card-titlle">44,99$</h6>
     <a href="#" class="btn">Подробнее</a>
-    <button class="btn2 buy-btn" data-name="Ambient Lighting Edit Unlocked Swan" data-image="./images/hourglassSwan.webp"  data-price="15.99">купить</button>
+    <button class="btn2 buy-btn" data-name="Ambient Lighting Edit Unlocked Swan" data-image="./images/hourglassSwan.webp"  data-price="44.99">купить</button>
     </div>
     </div>
-    <div class="card" style="width: 18rem;"> <img src="./images/4caee85fb0748252f37a8b7b66fd97be.jpg.webp" class="card-img-top" alt="Ko">
+    <div class="card" style="width: 18rem;"  data-price="55.99">
+       <img src="./images/4caee85fb0748252f37a8b7b66fd97be.jpg.webp" class="card-img-top" alt="Ko">
       <div class=" card-body">
       <h5 class="card-title">
         Сhanel Tendre Moisturizing Lotion</h5>
-        <h6 class="card-titlle">15,99$</h6>
+        <h6 class="card-titlle">55,99$</h6>
       <a href="#" class="btn">Подробнее</a>
-      <button class="btn2 buy-btn" data-name="Сhanel Tendre Moisturizing Lotion" data-image="./images/4caee85fb0748252f37a8b7b66fd97be.jpg.webp" data-price="15.99">купить</button>
+      <button class="btn2 buy-btn" data-name="Сhanel Tendre Moisturizing Lotion" data-image="./images/4caee85fb0748252f37a8b7b66fd97be.jpg.webp" data-price="55.99">купить</button>
       </div>
       </div>
 
-      <div class="card" style="width: 18rem;"> <img src="./images/95695847.jpg.webp" class="card-img-top" alt="Ko">
+      <div class="card" style="width: 18rem;" data-price="64.99">
+         <img src="./images/95695847.jpg.webp" class="card-img-top" alt="Ko">
         <div class=" card-body">
         <h5 class="card-title">Hourglass Ambient Diffused Heat</h5>
-        <h6 class="card-titlle">15,99$</h6>
+        <h6 class="card-titlle">64,99$</h6>
         <a href="#" class="btn">Подробнее</a>
-        <button class="btn2 buy-btn" data-name="Hourglass Ambient Diffused Heat" data-image="./images/95695847.jpg.webp" data-price="15.99">купить</button>
+        <button class="btn2 buy-btn" data-name="Hourglass Ambient Diffused Heat" data-image="./images/95695847.jpg.webp" data-price="64.99">купить</button>
         </div>
         </div>
 </div>
+
 <script>
-//   document.addEventListener('DOMContentLoaded', () => {
-//   const buyButtons = document.querySelectorAll('.buy-btn');
-
-//   buyButtons.forEach(button => {
-//       button.addEventListener('click', () => {
-//           const name = button.getAttribute('data-name');
-//           const price = button.getAttribute('data-price');
-//           const image = button.getAttribute('data-image');
-          
-//           const product = {
-//               name: name,
-//               price: price,
-//               image: image,
-//               quantity: 1
-//           };
-
-//           addToCart(product);
-//       });
-//   });
-// document.addEventListener('DOMContentLoaded', () => {
-//     const buttons = document.querySelectorAll('.buy-btn');
-  
-//     buttons.forEach(btn => {
-//         btn.onclick = function() {
-//             const name = this.dataset.name;
-//             const price = parseFloat(this.dataset.price);     
-//             let cart = JSON.parse(localStorage.getItem('myCart')) || [];
-//             const itemIndex = cart.findIndex(item => item.name === name);     
-//             if (itemIndex > -1) {
-//                 cart[itemIndex].count += 1;
-//             } else {
-//                 cart.push({ name, price, count: 1 });
-//             }
-//             localStorage.setItem('myCart', JSON.stringify(cart));
-//             alert('Товар добавлен!');
-//         };
-//     });
-//   });
-//   function addToCart(product) {
-//       let cart = JSON.parse(localStorage.getItem('cart')) || [];
-//       const existingProduct = cart.find(item => item.name === product.name);
-
-//       if (existingProduct && existingProduct.quantity>1) {
-//           existingProduct.quantity += 1;
-//           cardElement.style.addClassName = "active";
-//       } else {
-//           cart.push(product);
-//       }
-//       localStorage.setItem('cart', JSON.stringify(cart));
-      
-//       alert('Товар добавлен в корзину!');
-//   }
-// });
-
-// function removeFromCart(product) {
-//   let cart = JSON.parse(localStorage.getItem('cart')) || [];
-//   const existingProduct = cart.find(item => item.name === product.name);
-
-//   if (existingProduct && existingProduct.quantity>1) {
-//       existingProduct.quantity -= 1;
-//   } else {
-//       cart.push(product);
-//   }
- 
-  
-//   alert('Товар удален из корзины!');
-// }
-
 function liveSearch() {
   let cards = document.querySelectorAll('.card')
   let search_query = document.getElementById("searchbox").value;
   for (var i = 0; i < cards.length; i++) {
-    // If the text is within the card...
     if(cards[i].innerText.toLowerCase()
-      // ...and the text matches the search query...
       .includes(search_query.toLowerCase())) {
-        // ...remove the `.is-hidden` class.
         cards[i].classList.remove("is-hidden");
     } else {
-      // Otherwise, add the class.
       cards[i].classList.add("is-hidden");
     }
   }
@@ -326,7 +263,34 @@ function removeFromCart(product) {
   
   alert('Товар удален из корзины!');
 }
+function sortProducts(order) {
+      const container = document.getElementById('product-container');
+      const cards = Array.from(container.getElementsByClassName('card'));
+      cards.sort((a, b) => {
+        const priceA = parseFloat(a.getAttribute('data-price'));
+        const priceB = parseFloat(b.getAttribute('data-price'));
+        return order === 'low' ? priceA - priceB : priceB - priceA;
+      });
 
+      container.innerHTML = "";
+      cards.forEach(card => container.appendChild(card));
+    }
+function filterProducts(category) {
+      const cards = document.querySelectorAll('.card');
+      
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.classList.remove('d-none');
+        } else {
+
+          if (card.getAttribute('data-category') === category) {
+            card.classList.remove('d-none');
+          } else {
+            card.classList.add('d-none'); 
+          }
+        }
+      });
+    }
   </script>
   
 
