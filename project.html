@@ -150,7 +150,7 @@
             </div>
             
 
-  <div class="card" style="width: 18rem;"   data-price="23.99"> 
+  <div class="card" style="width: 18rem;"   data-category="face"  data-price="23.99"> 
     <img src="./images/MagicVanishColorCorrector.webp" class="card-img-top" alt="Ko">
    <div class=" card-body">
    <h5 class="card-title">Magic Vanish Color Corrector</h5>
@@ -160,7 +160,7 @@
    </div>
    </div>
 
-   <div class="card" style="width: 18rem;"  data-price="23.99"> 
+   <div class="card" style="width: 18rem;"   data-category="lips" data-price="23.99"> 
     <img src="./images/CharlotteTilburyPillowTalkMiniGlossyLipsDuoFair.jpg" class="card-img-top" alt="Ko">
    <div class=" card-body">
    <h5 class="card-title">Charlotte Tilbury Pillow Talk Mini Glossy Lips Duo Fair</h5>
@@ -170,7 +170,7 @@
    </div>
    </div>
 
-   <div class="card" style="width: 18rem;"   data-price="44.99"> 
+   <div class="card" style="width: 18rem;"   data-category="face"  data-price="44.99"> 
     <img src="./images/hourglassSwan.webp" class="card-img-top" alt="Ko">
     <div class=" card-body">
     <h5 class="card-title">Ambient Lighting Edit Unlocked Swan</h5>
@@ -179,7 +179,7 @@
     <button class="btn2 buy-btn" data-name="Ambient Lighting Edit Unlocked Swan" data-image="./images/hourglassSwan.webp"  data-price="44.99">купить</button>
     </div>
     </div>
-    <div class="card" style="width: 18rem;"  data-price="55.99">
+    <div class="card" style="width: 18rem;"  data-category="face"  data-price="55.99">
        <img src="./images/4caee85fb0748252f37a8b7b66fd97be.jpg.webp" class="card-img-top" alt="Ko">
       <div class=" card-body">
       <h5 class="card-title">
@@ -190,7 +190,7 @@
       </div>
       </div>
 
-      <div class="card" style="width: 18rem;" data-price="64.99">
+      <div class="card" style="width: 18rem;"  data-category="face" data-price="64.99">
          <img src="./images/95695847.jpg.webp" class="card-img-top" alt="Ko">
         <div class=" card-body">
         <h5 class="card-title">Hourglass Ambient Diffused Heat</h5>
@@ -271,7 +271,6 @@ function sortProducts(order) {
         const priceB = parseFloat(b.getAttribute('data-price'));
         return order === 'low' ? priceA - priceB : priceB - priceA;
       });
-
       container.innerHTML = "";
       cards.forEach(card => container.appendChild(card));
     }

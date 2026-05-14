@@ -10,30 +10,30 @@
     <div class="card">
         <h1>Зарегистрироваться</h1>
         
-        <form id="userForm">
+        <form id="userForm" onclick="registration()">
             <div class="ochert">
                 <div class="input_wrapper">
                 <lable class="pole">Имя</lable>
-                <input name="name" class="input" required/>
+                <input name="name" class="input" id="register-name" required/>
                 </div>
 
                 <div class="input_wrapper">
                 <lable class="pole" class="otst"> Фамилия</lable>
-                <input name="lastname"  class="input" required/>
+                <input name="lastname"  class="input" id="lastname" required/>
                 </div>
 
                 <div class="input_wrapper">
                   <lable class="pole" class="otst"> Email</lable>
-                  <input name="email"  class="input" required/>
+                  <input name="email"  class="input" id="email" required/>
                   </div>
                 <div class="input_wrapper">
                 <lable class="pole" class="otst"> Пароль </lable>
-                <input name="password"  class="input" required/>
+                <input name="password"  class="input" type="password" id="password" required/>
                 </div>
 
                 <div class="input_wrapper">
                   <lable class="pole" class="otst"> Повторите пароль </lable>
-                  <input name="repeat_password"  class="input" required/>
+                  <input name="repeat_password"  class="input" id="check-password" required type="password"/>
                   </div>
             </div>
 
@@ -47,7 +47,7 @@
         <a href="./vhod.html" class="a">Вход</a>
         </button>
     </div>
-    <script src="./scripts/pr.js"></script>
+    <script src="./scripts/avt.js"></script>
 </body>
 
 </html>

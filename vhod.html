@@ -6,7 +6,7 @@
     <title>Добавить пользователя</title>
     <link rel="stylesheet" href="vhod.css"/>
 </head>
-<body class="body1">
+<body class="body1" onclick="login()">
     <div class="card">
         <h1>Вoйти в аккаунт</h1>
         
@@ -14,13 +14,13 @@
             <div class="ochert">
 
                 <div class="input_wrapper">
-                  <lable class="pole" class="otst"> Email</lable>
-                  <input name="Email"  class="input" required/>
+                  <lable class="pole" class="otst"> Name</lable>
+                  <input name="name"  id="login-name" class="input" required/>
                   </div>
 
                 <div class="input_wrapper">
                 <lable class="pole" class="otst"> Пароль </lable>
-                <input name="password"  class="input" required/>
+                <input name="password" id="login-password" class="input" type="password" required/>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@
         <a href="./project.html" class="a">Вход</a>
         </button>
     </div>
-    <script src="./scripts/pr.js"></script>
+    <script src="./scripts/avt.js"></script>
 </body>
 
 </html>
