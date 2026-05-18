@@ -165,3 +165,76 @@ body{
 .carousel-inner{
   padding-bottom: 80px;
 }
+
+
+@media (max-width: 768px){
+
+
+  .navbar-brand{
+    font-size:20px;
+  }
+
+  .navbar-collapse{
+    padding-top:15px;
+  }
+
+
+  input{
+    width:100%;
+    font-size:18px;
+  }
+
+  form.d-flex{
+    width:100%;
+    margin-top:10px;
+  }
+
+
+  .kartochki{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:15px;
+  }
+
+  .card{
+    width:95% ;
+    max-width:350px;
+  }
+
+  .card-title{
+    height:auto;
+    font-size:18px;
+  }
+
+  h6{
+    font-size:16px;
+  }
+
+
+
+  .card-img-top{
+    height:250px;
+  }
+
+  .carousel-image{
+    height:220px ;
+    object-fit:cover;
+  }
+
+
+  .btn,
+  .btn2{
+    width:100%;
+    font-size:15px;
+  }
+
+  .btnk1,
+  .btnk2{
+    padding-right:10px;
+    margin-top:10px;
+  }
+
+
+
+}
